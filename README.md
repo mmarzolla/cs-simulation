@@ -13,7 +13,7 @@ following topics:
 
 The provided programs require the following software packages:
 
-- [Java Modeling Tools (JMT)](https://jmt.sourceforge.net/).
+- [Java Modeling Tools (JMT)](https://java-modelling-tools.github.io/).
 - [NetLogo](https://www.netlogo.org/).
 - Any Java JDK, such as [OpenJDK](https://openjdk.org/index.html).
 - [Jupyter notebooks](https://jupyter.org/).
