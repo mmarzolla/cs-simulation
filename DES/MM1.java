@@ -20,7 +20,6 @@
  ****************************************************************************/
 
 import java.util.LinkedList;
-import java.util.Random;
 import java.io.*;
 
 /**
@@ -43,41 +42,6 @@ public class MM1 extends Simulation {
     int nCompleted = 0; // number of completed jobs
     int maxJobs = 1000; // how many jobs to generate
     PrintStream outStream;
-
-    /**
-     * Utility class to generate pseudo-random numbers with exponential
-     * distribution with rate lambda.
-     */
-    protected class RandExp {
-        Random rng;
-        double lambda;
-
-        /**
-         * This RNG will generate a stream of pseudo-random numbers
-         * that exponentially distributed with mean (1/lambda).
-         *
-         * This class is for illustrative purposes only and should not
-         * be used in production:
-         *
-         * - Each instance of this class relies on an instance of a
-         *   Java Random object that is initialized
-         *   non-deterministically. A mechanism should be provided to
-         *   initialize the RNG deterministically, to guarantee
-         *   repeatability of simulation runs.
-         *
-         * - In this implementation, different instances of the
-         *   RandExp class are not guaranteed to produce
-         *   non-overlapping sequences of pseudo-random numbers.
-         */
-        public RandExp(double lambda) {
-            this.rng = new Random();
-            this.lambda = lambda;
-        }
-
-        public double nextDouble( ) {
-            return Math.log(1-rng.nextDouble())/(-lambda);
-        }
-    }
 
     /**
      * A job is a container of some state variables. We store various

@@ -61,7 +61,7 @@ public abstract class Simulation {
     /**
      * Returns the current simulation time.
      */
-    public double now( ) { return time; }
+    public final double now( ) { return time; }
 
     /**
      * Return true iff the simulation should terminate. To be
@@ -76,6 +76,7 @@ public abstract class Simulation {
     public void run( ) {
         while (!FEL.isEmpty() && !finished()) {
             Event ev = FEL.poll();
+            assert(ev.time() >= time);
             time = ev.time();
             ev.execute();
         }
