@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
-<archive xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="application-server.jsimg" timestamp="Tue Nov 10 14:37:33 CET 2026" xsi:noNamespaceSchemaLocation="Archive.xsd">
-    <sim disableStatisticStop="false" logDecimalSeparator="." logDelimiter="," logPath="/home/moreno/JMT" logReplaceMode="0" maxEvents="-1" maxSamples="1000000" name="application-server.jsimg" polling="1.0" xsi:noNamespaceSchemaLocation="SIMmodeldefinition.xsd">
-        <userClass customers="1" name="Class1" priority="0" referenceSource="Web Server" softDeadline="0.0" type="closed"/>
+<archive xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="web-application.jsimg" timestamp="Tue Nov 10 15:49:39 CET 2026" xsi:noNamespaceSchemaLocation="Archive.xsd">
+    <sim disableStatisticStop="false" logDecimalSeparator="." logDelimiter="," logPath="/home/moreno/JMT" logReplaceMode="0" maxEvents="-1" maxSamples="1000000" name="web-application.jsimg" polling="1.0" xsi:noNamespaceSchemaLocation="SIMmodeldefinition.xsd">
+        <userClass customers="1" name="Class1" priority="0" referenceSource="Users" softDeadline="0.0" type="closed"/>
         <node name="Users">
             <classSoftDeadlines>
                 <softDeadline>0.0</softDeadline>
@@ -279,7 +279,7 @@
                         <subParameter classPath="jmt.engine.random.Exponential" name="Exponential"/>
                         <subParameter classPath="jmt.engine.random.ExponentialPar" name="distrPar">
                             <subParameter classPath="java.lang.Double" name="lambda">
-                                <value>50.0</value>
+                                <value>40.0</value>
                             </subParameter>
                         </subParameter>
                     </subParameter>
@@ -362,114 +362,114 @@
     </jmodel>
     <results elapsedTime="0" logDecimalSeparator="." logDelimiter="," pollingInterval="0.0" xsi:noNamespaceSchemaLocation="Results.xsd">
         <measure alpha="0.99" analyzedSamples="20" name="Network_Class1_System Throughput" nodeType="" precision="0.03" referenceClass="Class1" referenceStation="Network" type="16">
-            <sample lowerBound="7.845692745899632" meanValue="8.052815186443022" upperBound="8.271170018300941" validity="true"/>
-            <sample lowerBound="15.680311888960713" meanValue="16.09003310645569" upperBound="16.521740569234453" validity="true"/>
-            <sample lowerBound="23.18285916882549" meanValue="23.876394408696598" upperBound="24.612704712012256" validity="true"/>
-            <sample lowerBound="30.4823015258726" meanValue="31.122407157628512" upperBound="31.789972914722348" validity="true"/>
-            <sample lowerBound="37.51673974945931" meanValue="38.34741295966622" upperBound="39.215703611438705" validity="true"/>
-            <sample lowerBound="42.69690366577637" meanValue="43.94100411378517" upperBound="45.25978158262678" validity="true"/>
-            <sample lowerBound="49.983742329799384" meanValue="51.19023405744272" upperBound="52.45641025975006" validity="true"/>
-            <sample lowerBound="54.4638750812938" meanValue="55.96253817358831" upperBound="57.54601131307651" validity="true"/>
-            <sample lowerBound="60.65259464844443" meanValue="62.20079192979056" upperBound="63.83009704502866" validity="true"/>
-            <sample lowerBound="64.35736269435549" meanValue="66.04973557483093" upperBound="67.8335191768297" validity="true"/>
-            <sample lowerBound="69.94131472125633" meanValue="71.26557312698927" upperBound="72.64094594710602" validity="true"/>
-            <sample lowerBound="71.41336166306439" meanValue="73.21183908298482" upperBound="75.10324263688162" validity="true"/>
-            <sample lowerBound="74.48714889494218" meanValue="76.17226729805277" upperBound="77.93539517461674" validity="true"/>
-            <sample lowerBound="77.6416999939158" meanValue="79.43053846661098" upperBound="81.30374931543597" validity="true"/>
-            <sample lowerBound="77.69098371810803" meanValue="79.2712806681387" upperBound="80.91720147616675" validity="true"/>
-            <sample lowerBound="79.71828045764528" meanValue="81.72747690016205" upperBound="83.84057034251569" validity="true"/>
-            <sample lowerBound="80.79947355704223" meanValue="82.3694041467127" upperBound="84.00155097452043" validity="true"/>
-            <sample lowerBound="80.2340307818416" meanValue="81.88127213896327" upperBound="83.59756846342677" validity="true"/>
-            <sample lowerBound="81.57136678411324" meanValue="83.99629676916857" upperBound="86.56981930419172" validity="true"/>
-            <sample lowerBound="80.46125712997787" meanValue="82.66846702776282" upperBound="85.00018871005459" validity="true"/>
+            <sample lowerBound="0.7887113849233951" meanValue="0.8014005167113238" upperBound="0.8145046213041712" validity="true"/>
+            <sample lowerBound="1.5665992413612526" meanValue="1.5874817411581514" upperBound="1.6089284824956136" validity="true"/>
+            <sample lowerBound="2.3069239666534016" meanValue="2.3487284303722187" upperBound="2.3920759589797127" validity="true"/>
+            <sample lowerBound="2.9638949687600658" meanValue="3.048989496272973" upperBound="3.1391146459220285" validity="true"/>
+            <sample lowerBound="3.684906439318354" meanValue="3.749665378609964" upperBound="3.8167411959946036" validity="true"/>
+            <sample lowerBound="4.3275313698006785" meanValue="4.3827881603602" upperBound="4.439474312654932" validity="true"/>
+            <sample lowerBound="4.901631378186598" meanValue="5.031157756509263" upperBound="5.167715448133653" validity="true"/>
+            <sample lowerBound="5.4519835178311435" meanValue="5.551615676018637" upperBound="5.654957070120626" validity="true"/>
+            <sample lowerBound="5.9522051021656885" meanValue="6.048936113971725" upperBound="6.148863071486213" validity="true"/>
+            <sample lowerBound="6.411273172352811" meanValue="6.519110850967192" upperBound="6.630638252413033" validity="true"/>
+            <sample lowerBound="6.723993823032221" meanValue="6.924308835178552" upperBound="7.136925527175899" validity="true"/>
+            <sample lowerBound="7.013875942468397" meanValue="7.188081463170907" upperBound="7.371160968019394" validity="true"/>
+            <sample lowerBound="7.356153921608052" meanValue="7.490041747651898" upperBound="7.628893652760556" validity="true"/>
+            <sample lowerBound="7.5895091331432045" meanValue="7.720424302754705" upperBound="7.855935186174521" validity="true"/>
+            <sample lowerBound="7.740521518991866" meanValue="7.890081855088227" upperBound="8.045535593507251" validity="true"/>
+            <sample lowerBound="7.939395025170342" meanValue="8.095415530259622" upperBound="8.257691008161915" validity="true"/>
+            <sample lowerBound="7.98735136452262" meanValue="8.123403670325953" upperBound="8.26417117797702" validity="true"/>
+            <sample lowerBound="8.031926947334924" meanValue="8.16655207241887" upperBound="8.305767100411886" validity="true"/>
+            <sample lowerBound="8.06291243466417" meanValue="8.230076053217527" upperBound="8.404317828895344" validity="true"/>
+            <sample lowerBound="8.186980052555132" meanValue="8.3563972288788" upperBound="8.532974231717471" validity="true"/>
         </measure>
         <measure alpha="0.99" analyzedSamples="20" name="Network_Class1_System Response Time" nodeType="" precision="0.03" referenceClass="Class1" referenceStation="Network" type="15">
-            <sample lowerBound="0.1209018793940134" meanValue="0.12418017511236416" upperBound="0.12745847083071493" validity="true"/>
-            <sample lowerBound="0.1217674651461208" meanValue="0.12516169834875937" upperBound="0.12855593155139794" validity="true"/>
-            <sample lowerBound="0.12200156880743188" meanValue="0.12566583801675404" upperBound="0.1293301072260762" validity="true"/>
-            <sample lowerBound="0.12519544389556453" meanValue="0.12870726614308292" upperBound="0.1322190883906013" validity="true"/>
-            <sample lowerBound="0.12761823470888392" meanValue="0.1306112471604251" upperBound="0.1336042596119663" validity="true"/>
-            <sample lowerBound="0.13227950065774463" meanValue="0.13485679786735125" upperBound="0.13743409507695786" validity="true"/>
-            <sample lowerBound="0.1337645319093111" meanValue="0.13696601334395583" upperBound="0.14016749477860058" validity="true"/>
-            <sample lowerBound="0.13780725858200094" meanValue="0.14206120515719095" upperBound="0.14631515173238097" validity="true"/>
-            <sample lowerBound="0.1398259327012536" meanValue="0.14379754875571868" upperBound="0.14776916481018376" validity="true"/>
-            <sample lowerBound="0.14695717995285756" meanValue="0.15089532767103567" upperBound="0.15483347538921377" validity="true"/>
-            <sample lowerBound="0.14957257634811383" meanValue="0.15392793425495613" upperBound="0.15828329216179843" validity="true"/>
-            <sample lowerBound="0.15819421635278744" meanValue="0.16298229354252328" upperBound="0.16777037073225912" validity="true"/>
-            <sample lowerBound="0.16535571527772264" meanValue="0.16945454970250606" upperBound="0.1735533841272895" validity="true"/>
-            <sample lowerBound="0.17287664821018853" meanValue="0.17681092297983989" upperBound="0.18074519774949124" validity="true"/>
-            <sample lowerBound="0.18507970364362522" meanValue="0.18850994519451955" upperBound="0.19194018674541388" validity="true"/>
-            <sample lowerBound="0.19370173188144424" meanValue="0.19780444830760427" upperBound="0.2019071647337643" validity="true"/>
-            <sample lowerBound="0.20250245891364244" meanValue="0.20684248277262615" upperBound="0.21118250663160987" validity="true"/>
-            <sample lowerBound="0.21634594494175105" meanValue="0.21989658587046199" upperBound="0.22344722679917292" validity="true"/>
-            <sample lowerBound="0.22298083009637162" meanValue="0.2272379409674478" upperBound="0.23149505183852395" validity="true"/>
-            <sample lowerBound="0.23523524798775197" meanValue="0.24068487199785252" upperBound="0.24613449600795306" validity="true"/>
+            <sample lowerBound="1.2277401181577297" meanValue="1.2478155168949243" upperBound="1.267890915632119" validity="true"/>
+            <sample lowerBound="1.237665677267501" meanValue="1.2596513941807421" upperBound="1.2816371110939833" validity="true"/>
+            <sample lowerBound="1.2539666087769066" meanValue="1.2807559364443801" upperBound="1.3075452641118537" validity="true"/>
+            <sample lowerBound="1.273004579149438" meanValue="1.3118556638768006" upperBound="1.3507067486041633" validity="true"/>
+            <sample lowerBound="1.3096014080615117" meanValue="1.3334625264433053" upperBound="1.357323644825099" validity="true"/>
+            <sample lowerBound="1.3473979715055662" meanValue="1.366063405144051" upperBound="1.3847288387825358" validity="true"/>
+            <sample lowerBound="1.3617320724519673" meanValue="1.3974251370335589" upperBound="1.4331182016151505" validity="true"/>
+            <sample lowerBound="1.4203936846919372" meanValue="1.441212252053093" upperBound="1.4620308194142488" validity="true"/>
+            <sample lowerBound="1.4640706118436098" meanValue="1.4874795296104577" upperBound="1.5108884473773057" validity="true"/>
+            <sample lowerBound="1.5088650808898667" meanValue="1.5340653796954813" upperBound="1.5592656785010959" validity="true"/>
+            <sample lowerBound="1.5630877660622802" meanValue="1.5885232163121847" upperBound="1.6139586665620893" validity="true"/>
+            <sample lowerBound="1.6325146640307708" meanValue="1.6642158309293293" upperBound="1.6959169978278879" validity="true"/>
+            <sample lowerBound="1.6966602531496664" meanValue="1.7300536556671582" upperBound="1.76344705818465" validity="true"/>
+            <sample lowerBound="1.7772723157131758" meanValue="1.8135313199590979" upperBound="1.84979032420502" validity="true"/>
+            <sample lowerBound="1.8606579732529693" meanValue="1.8986545314628809" upperBound="1.9366510896727924" validity="true"/>
+            <sample lowerBound="1.93810909128384" meanValue="1.9731866231401332" upperBound="2.0082641549964264" validity="true"/>
+            <sample lowerBound="2.056493266710367" meanValue="2.099332083396155" upperBound="2.142170900081943" validity="true"/>
+            <sample lowerBound="2.1531187446617492" meanValue="2.2011323855759786" upperBound="2.249146026490208" validity="true"/>
+            <sample lowerBound="2.269421497589511" meanValue="2.3123484562095507" upperBound="2.3552754148295905" validity="true"/>
+            <sample lowerBound="2.3367892679790456" meanValue="2.402342310414791" upperBound="2.4678953528505367" validity="true"/>
         </measure>
         <measure alpha="0.99" analyzedSamples="20" name="Web Server_Class1_Utilization" nodeType="station" precision="0.03" referenceClass="Class1" referenceStation="Web Server" type="6">
-            <sample lowerBound="0.03942068129516919" meanValue="0.040488258973982026" upperBound="0.041555836652794866" validity="true"/>
-            <sample lowerBound="0.07832983919070305" meanValue="0.08042145353105318" upperBound="0.0825130678714033" validity="true"/>
-            <sample lowerBound="0.11638496903430048" meanValue="0.11958817329982267" upperBound="0.12279137756534486" validity="true"/>
-            <sample lowerBound="0.15099759218989572" meanValue="0.1548841572204842" upperBound="0.1587707222510727" validity="true"/>
-            <sample lowerBound="0.18882521530066157" meanValue="0.19250186530969118" upperBound="0.1961785153187208" validity="true"/>
-            <sample lowerBound="0.21629370609573015" meanValue="0.22189462424484294" upperBound="0.22749554239395572" validity="true"/>
-            <sample lowerBound="0.2479131995915585" meanValue="0.2545468023584584" upperBound="0.2611804051253583" validity="true"/>
-            <sample lowerBound="0.27449160482619955" meanValue="0.28119243931140464" upperBound="0.2878932737966097" validity="true"/>
-            <sample lowerBound="0.3037835650922409" meanValue="0.31104789835506885" upperBound="0.3183122316178968" validity="true"/>
-            <sample lowerBound="0.3237436056837144" meanValue="0.3315943630746059" upperBound="0.33944512046549735" validity="true"/>
-            <sample lowerBound="0.34600876303993616" meanValue="0.355223359909136" upperBound="0.36443795677833585" validity="true"/>
-            <sample lowerBound="0.3563486490099197" meanValue="0.367059623611333" upperBound="0.3777705982127463" validity="true"/>
-            <sample lowerBound="0.37850871121309226" meanValue="0.3861192233857728" upperBound="0.39372973555845336" validity="true"/>
-            <sample lowerBound="0.38234842729183505" meanValue="0.3917386874225221" upperBound="0.40112894755320916" validity="true"/>
-            <sample lowerBound="0.3872062828384502" meanValue="0.398494171109636" upperBound="0.40978205938082174" validity="true"/>
-            <sample lowerBound="0.39223182239134624" meanValue="0.4035643083803305" upperBound="0.4148967943693148" validity="true"/>
-            <sample lowerBound="0.3988900376000833" meanValue="0.4110972914360498" upperBound="0.4233045452720163" validity="true"/>
-            <sample lowerBound="0.3959828614813613" meanValue="0.40819633690543794" upperBound="0.4204098123295146" validity="true"/>
-            <sample lowerBound="0.4045318700392982" meanValue="0.41480444060276134" upperBound="0.4250770111662245" validity="true"/>
-            <sample lowerBound="0.40258720813564214" meanValue="0.4127785397943418" upperBound="0.4229698714530415" validity="true"/>
+            <sample lowerBound="0.0396242886926428" meanValue="0.040832864847547085" upperBound="0.04204144100245137" validity="true"/>
+            <sample lowerBound="0.07653209633834956" meanValue="0.07883321338507424" upperBound="0.0811343304317989" validity="true"/>
+            <sample lowerBound="0.11195095644573279" meanValue="0.11488253485135404" upperBound="0.11781411325697529" validity="true"/>
+            <sample lowerBound="0.15078908604810887" meanValue="0.15494967484835653" upperBound="0.1591102636486042" validity="true"/>
+            <sample lowerBound="0.18101406222220337" meanValue="0.18654399764237473" upperBound="0.19207393306254608" validity="true"/>
+            <sample lowerBound="0.2121641397756439" meanValue="0.2184892274515422" upperBound="0.2248143151274405" validity="true"/>
+            <sample lowerBound="0.2447363064463897" meanValue="0.25185706762879406" upperBound="0.25897782881119846" validity="true"/>
+            <sample lowerBound="0.27525132610757413" meanValue="0.281776711641178" upperBound="0.2883020971747819" validity="true"/>
+            <sample lowerBound="0.2979653168918749" meanValue="0.3049919910780973" upperBound="0.31201866526431976" validity="true"/>
+            <sample lowerBound="0.3125968066538292" meanValue="0.32206383444186276" upperBound="0.3315308622298963" validity="true"/>
+            <sample lowerBound="0.33722761790992634" meanValue="0.34694371605128654" upperBound="0.35665981419264675" validity="true"/>
+            <sample lowerBound="0.35535101507703165" meanValue="0.3613767456507943" upperBound="0.36740247622455696" validity="true"/>
+            <sample lowerBound="0.36748836587790484" meanValue="0.37521133401298795" upperBound="0.38293430214807106" validity="true"/>
+            <sample lowerBound="0.37552870278498585" meanValue="0.3862187001702876" upperBound="0.39690869755558933" validity="true"/>
+            <sample lowerBound="0.3844161308102817" meanValue="0.3948591768956091" upperBound="0.40530222298093654" validity="true"/>
+            <sample lowerBound="0.3917104611312702" meanValue="0.4015563586314301" upperBound="0.4114022561315899" validity="true"/>
+            <sample lowerBound="0.39811359823434284" meanValue="0.4079103057455045" upperBound="0.4177070132566662" validity="true"/>
+            <sample lowerBound="0.3987176784707352" meanValue="0.40939824994691004" upperBound="0.4200788214230849" validity="true"/>
+            <sample lowerBound="0.4072763340391775" meanValue="0.4176607414684156" upperBound="0.42804514889765366" validity="true"/>
+            <sample lowerBound="0.4021951632200231" meanValue="0.4129369344722692" upperBound="0.4236787057245153" validity="true"/>
         </measure>
         <measure alpha="0.99" analyzedSamples="20" name="AS1_Class1_Utilization" nodeType="station" precision="0.03" referenceClass="Class1" referenceStation="AS1" type="6">
-            <sample lowerBound="0.0951108690635693" meanValue="0.09747047343724848" upperBound="0.09983007781092765" validity="true"/>
-            <sample lowerBound="0.18758513657926562" meanValue="0.19221713706926752" upperBound="0.19684913755926942" validity="true"/>
-            <sample lowerBound="0.2798739756915922" meanValue="0.28729725982871446" upperBound="0.2947205439658367" validity="true"/>
-            <sample lowerBound="0.3640642407762339" meanValue="0.3722755790645433" upperBound="0.38048691735285267" validity="true"/>
-            <sample lowerBound="0.44784709703688824" meanValue="0.4592072799180541" upperBound="0.47056746279921996" validity="true"/>
-            <sample lowerBound="0.5226176347807352" meanValue="0.5332155692007212" upperBound="0.5438135036207072" validity="true"/>
-            <sample lowerBound="0.5904751566421198" meanValue="0.6039449376455179" upperBound="0.6174147186489161" validity="true"/>
-            <sample lowerBound="0.6496652538122253" meanValue="0.6684030078393115" upperBound="0.6871407618663977" validity="true"/>
-            <sample lowerBound="0.7333796319622686" meanValue="0.750791591558302" upperBound="0.7682035511543354" validity="true"/>
-            <sample lowerBound="0.7820043378176754" meanValue="0.7992195261530868" upperBound="0.8164347144884981" validity="true"/>
-            <sample lowerBound="0.8529031596119918" meanValue="0.8786771910890598" upperBound="0.9044512225661279" validity="true"/>
-            <sample lowerBound="0.8573325415893315" meanValue="0.8777639130390656" upperBound="0.8981952844887998" validity="true"/>
-            <sample lowerBound="0.9049927033196199" meanValue="0.9223474499873742" upperBound="0.9397021966551284" validity="true"/>
-            <sample lowerBound="0.9291099778807775" meanValue="0.9456642874312737" upperBound="0.9622185969817699" validity="true"/>
-            <sample lowerBound="0.9506844846547032" meanValue="0.967344204893273" upperBound="0.9840039251318428" validity="true"/>
-            <sample lowerBound="0.9534413756636969" meanValue="0.9709269034159583" upperBound="0.9884124311682198" validity="true"/>
-            <sample lowerBound="0.9739974140343663" meanValue="0.987383513932772" upperBound="1.0007696138311777" validity="true"/>
-            <sample lowerBound="0.9725367278842704" meanValue="0.9886634871408966" upperBound="1.0047902463975227" validity="true"/>
-            <sample lowerBound="0.9810197830081808" meanValue="0.9937942822275178" upperBound="1.0065687814468547" validity="true"/>
-            <sample lowerBound="0.9838061724995444" meanValue="0.9970820481683134" upperBound="1.0103579238370823" validity="true"/>
+            <sample lowerBound="0.09566784089207361" meanValue="0.09788749154882725" upperBound="0.1001071422055809" validity="true"/>
+            <sample lowerBound="0.18463988911996637" meanValue="0.18935056073864678" upperBound="0.1940612323573272" validity="true"/>
+            <sample lowerBound="0.2751412566240316" meanValue="0.28333553039856524" upperBound="0.29152980417309887" validity="true"/>
+            <sample lowerBound="0.3639090771993606" meanValue="0.3722159141691322" upperBound="0.38052275113890377" validity="true"/>
+            <sample lowerBound="0.4397162801446735" meanValue="0.4491294822306349" upperBound="0.45854268431659634" validity="true"/>
+            <sample lowerBound="0.5180935174511955" meanValue="0.5281879557966609" upperBound="0.5382823941421263" validity="true"/>
+            <sample lowerBound="0.5928315520313807" meanValue="0.610216597020423" upperBound="0.6276016420094652" validity="true"/>
+            <sample lowerBound="0.662746885567506" meanValue="0.6772320432361166" upperBound="0.6917172009047272" validity="true"/>
+            <sample lowerBound="0.7132781252481392" meanValue="0.7332244350825662" upperBound="0.7531707449169932" validity="true"/>
+            <sample lowerBound="0.755605238674884" meanValue="0.7780990703715892" upperBound="0.8005929020682944" validity="true"/>
+            <sample lowerBound="0.811930252596419" meanValue="0.8295194501680402" upperBound="0.8471086477396613" validity="true"/>
+            <sample lowerBound="0.8496963009524595" meanValue="0.8690335032288946" upperBound="0.8883707055053297" validity="true"/>
+            <sample lowerBound="0.8790274311884637" meanValue="0.8953257176542877" upperBound="0.9116240041201117" validity="true"/>
+            <sample lowerBound="0.9147977834881391" meanValue="0.9356912289992846" upperBound="0.95658467451043" validity="true"/>
+            <sample lowerBound="0.9471920074683775" meanValue="0.964095522104357" upperBound="0.9809990367403365" validity="true"/>
+            <sample lowerBound="0.9498300729260635" meanValue="0.9662339289586748" upperBound="0.9826377849912861" validity="true"/>
+            <sample lowerBound="0.9718123136185649" meanValue="0.9844063955866963" upperBound="0.9970004775548277" validity="true"/>
+            <sample lowerBound="0.9741052158527462" meanValue="0.9873881520404072" upperBound="1.0006710882280683" validity="true"/>
+            <sample lowerBound="0.9738960833406494" meanValue="0.9874650071905223" upperBound="1.0010339310403953" validity="true"/>
+            <sample lowerBound="0.982490391812851" meanValue="0.9955809471557132" upperBound="1.0086715024985753" validity="true"/>
         </measure>
         <measure alpha="0.99" analyzedSamples="20" name="AS2_Class1_Utilization" nodeType="station" precision="0.03" referenceClass="Class1" referenceStation="AS2" type="6">
-            <sample lowerBound="0.0465285420578725" meanValue="0.04795462126410223" upperBound="0.04938070047033196" validity="true"/>
-            <sample lowerBound="0.09490342892107337" meanValue="0.09663237784385613" upperBound="0.09836132676663889" validity="true"/>
-            <sample lowerBound="0.13934256289100383" meanValue="0.1418244828411011" upperBound="0.14430640279119838" validity="true"/>
-            <sample lowerBound="0.17970184675665116" meanValue="0.18504829257409233" upperBound="0.1903947383915335" validity="true"/>
-            <sample lowerBound="0.22278903809159895" meanValue="0.22691881548610712" upperBound="0.2310485928806153" validity="true"/>
-            <sample lowerBound="0.26207912773940445" meanValue="0.26953249250756356" upperBound="0.27698585727572267" validity="true"/>
-            <sample lowerBound="0.2981541221852747" meanValue="0.304532484397096" upperBound="0.3109108466089173" validity="true"/>
-            <sample lowerBound="0.3339516712018784" meanValue="0.34108908740623506" upperBound="0.3482265036105917" validity="true"/>
-            <sample lowerBound="0.36784514844666644" meanValue="0.375591246227346" upperBound="0.3833373440080256" validity="true"/>
-            <sample lowerBound="0.38733694307213007" meanValue="0.3967305191475088" upperBound="0.4061240952228875" validity="true"/>
-            <sample lowerBound="0.4135649926552947" meanValue="0.42394263663641685" upperBound="0.43432028061753897" validity="true"/>
-            <sample lowerBound="0.42477294067151344" meanValue="0.4371149578167749" upperBound="0.44945697496203635" validity="true"/>
-            <sample lowerBound="0.44614547019854706" meanValue="0.45497686210415095" upperBound="0.46380825400975484" validity="true"/>
-            <sample lowerBound="0.46267953071585405" meanValue="0.47342776275192405" upperBound="0.48417599478799406" validity="true"/>
-            <sample lowerBound="0.4706638883186442" meanValue="0.48332730565569026" upperBound="0.49599072299273633" validity="true"/>
-            <sample lowerBound="0.4711420226900526" meanValue="0.48503867800310996" upperBound="0.4989353333161673" validity="true"/>
-            <sample lowerBound="0.4778953062320097" meanValue="0.49255396343312435" upperBound="0.507212620634239" validity="true"/>
-            <sample lowerBound="0.4891536387159608" meanValue="0.5023629569908211" upperBound="0.5155722752656814" validity="true"/>
-            <sample lowerBound="0.4892581856632799" meanValue="0.5036304423098061" upperBound="0.5180026989563324" validity="true"/>
-            <sample lowerBound="0.4928037523252407" meanValue="0.5019022232208843" upperBound="0.5110006941165279" validity="true"/>
+            <sample lowerBound="0.059000914342309044" meanValue="0.06046069673880759" upperBound="0.06192047913530614" validity="true"/>
+            <sample lowerBound="0.11589978465269532" meanValue="0.11945493523824248" upperBound="0.12301008582378964" validity="true"/>
+            <sample lowerBound="0.16979403561561832" meanValue="0.173722944027167" upperBound="0.1776518524387157" validity="true"/>
+            <sample lowerBound="0.22679241410910345" meanValue="0.23209137652148687" upperBound="0.2373903389338703" validity="true"/>
+            <sample lowerBound="0.27434595521280786" meanValue="0.28269758909157505" upperBound="0.29104922297034225" validity="true"/>
+            <sample lowerBound="0.32021646346017024" meanValue="0.32999916211173086" upperBound="0.3397818607632915" validity="true"/>
+            <sample lowerBound="0.37182053474030047" meanValue="0.3820176086821615" upperBound="0.39221468262402254" validity="true"/>
+            <sample lowerBound="0.4093016715819606" meanValue="0.4219377833735327" upperBound="0.4345738951651048" validity="true"/>
+            <sample lowerBound="0.446335030125455" meanValue="0.45691011836555234" upperBound="0.4674852066056497" validity="true"/>
+            <sample lowerBound="0.471678404613555" meanValue="0.4838749414241988" upperBound="0.4960714782348426" validity="true"/>
+            <sample lowerBound="0.5014162128306525" meanValue="0.5159891261884019" upperBound="0.5305620395461512" validity="true"/>
+            <sample lowerBound="0.5348623010840193" meanValue="0.5493420352169346" upperBound="0.5638217693498498" validity="true"/>
+            <sample lowerBound="0.5489805933801435" meanValue="0.5628458469152151" upperBound="0.5767111004502867" validity="true"/>
+            <sample lowerBound="0.5596413999523702" meanValue="0.574115234950482" upperBound="0.5885890699485938" validity="true"/>
+            <sample lowerBound="0.5735125759819284" meanValue="0.589494219761275" upperBound="0.6054758635406217" validity="true"/>
+            <sample lowerBound="0.5850651856472563" meanValue="0.5998538579684521" upperBound="0.614642530289648" validity="true"/>
+            <sample lowerBound="0.6043367132158024" meanValue="0.6177237867636693" upperBound="0.6311108603115363" validity="true"/>
+            <sample lowerBound="0.5944270483153438" meanValue="0.6087129714503475" upperBound="0.6229988945853513" validity="true"/>
+            <sample lowerBound="0.6075022065393797" meanValue="0.6220996652401081" upperBound="0.6366971239408364" validity="true"/>
+            <sample lowerBound="0.6067048990244976" meanValue="0.6206691749954838" upperBound="0.63463345096647" validity="true"/>
         </measure>
     </results>
 </archive>
