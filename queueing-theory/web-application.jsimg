@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
-<archive xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="web-application.jsimg" timestamp="Tue Nov 10 15:49:39 CET 2026" xsi:noNamespaceSchemaLocation="Archive.xsd">
+<archive xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="web-application.jsimg" timestamp="Thu Nov 12 13:34:58 CET 2026" xsi:noNamespaceSchemaLocation="Archive.xsd">
     <sim disableStatisticStop="false" logDecimalSeparator="." logDelimiter="," logPath="/home/moreno/JMT" logReplaceMode="0" maxEvents="-1" maxSamples="1000000" name="web-application.jsimg" polling="1.0" xsi:noNamespaceSchemaLocation="SIMmodeldefinition.xsd">
         <userClass customers="1" name="Class1" priority="0" referenceSource="Users" softDeadline="0.0" type="closed"/>
         <node name="Users">
@@ -341,16 +341,16 @@
     <jmodel xsi:noNamespaceSchemaLocation="JModelGUI.xsd">
         <userClass color="#FF0000FF" name="Class1"/>
         <station name="Users">
-            <position angle="0.0" rotate="false" x="233.0" y="191.0"/>
+            <position angle="0.0" rotate="false" x="140.0" y="41.0"/>
         </station>
         <station name="Web Server">
-            <position angle="0.0" rotate="false" x="390.0" y="211.0"/>
+            <position angle="0.0" rotate="false" x="280.0" y="61.0"/>
         </station>
         <station name="AS1">
-            <position angle="0.0" rotate="false" x="589.0" y="154.0"/>
+            <position angle="0.0" rotate="false" x="460.0" y="21.0"/>
         </station>
         <station name="AS2">
-            <position angle="0.0" rotate="false" x="586.0" y="225.0"/>
+            <position angle="0.0" rotate="false" x="460.0" y="77.0"/>
         </station>
         <parametric classPath="jmt.gui.common.definitions.parametric.NumberOfCustomerParametricAnalysis" enabled="true">
             <field name="Class" value="Class1"/>

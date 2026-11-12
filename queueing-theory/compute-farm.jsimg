@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
-<archive xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="compute-farm.jsimg" timestamp="Thu Sep 17 21:42:56 CEST 2026" xsi:noNamespaceSchemaLocation="Archive.xsd">
-    <sim disableStatisticStop="false" logDecimalSeparator="." logDelimiter="," logPath="/home/moreno/JMT/" logReplaceMode="0" maxEvents="-1" maxSamples="1000000" name="compute-farm.jsimg" polling="1.0" xsi:noNamespaceSchemaLocation="SIMmodeldefinition.xsd">
+<archive xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="compute-farm.jsimg" timestamp="Thu Nov 12 13:34:01 CET 2026" xsi:noNamespaceSchemaLocation="Archive.xsd">
+    <sim disableStatisticStop="false" logDecimalSeparator="." logDelimiter="," logPath="/home/moreno/JMT" logReplaceMode="0" maxEvents="-1" maxSamples="1000000" name="compute-farm.jsimg" polling="1.0" xsi:noNamespaceSchemaLocation="SIMmodeldefinition.xsd">
         <userClass customers="10" name="Class1" priority="0" referenceSource="CPU" softDeadline="0.0" type="closed"/>
         <node name="CPU">
             <classSoftDeadlines>
@@ -245,13 +245,13 @@
     <jmodel xsi:noNamespaceSchemaLocation="JModelGUI.xsd">
         <userClass color="#FF0000FF" name="Class1"/>
         <station name="CPU">
-            <position angle="0.0" rotate="false" x="320.0" y="181.0"/>
+            <position angle="0.0" rotate="false" x="120.0" y="41.0"/>
         </station>
         <station name="Disk">
-            <position angle="0.0" rotate="false" x="600.0" y="201.0"/>
+            <position angle="0.0" rotate="false" x="400.0" y="61.0"/>
         </station>
         <station name="Tape">
-            <position angle="0.0" rotate="false" x="465.0" y="311.0"/>
+            <position angle="0.0" rotate="false" x="240.0" y="101.0"/>
         </station>
     </jmodel>
     <results elapsedTime="387" logDecimalSeparator="." logDelimiter="," pollingInterval="1.0" xsi:noNamespaceSchemaLocation="Results.xsd">

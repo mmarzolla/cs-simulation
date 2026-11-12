@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
-<archive xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="web-server.jsimg" timestamp="Tue Nov 10 13:48:44 CET 2026" xsi:noNamespaceSchemaLocation="Archive.xsd">
-    <sim disableStatisticStop="false" logDecimalSeparator="." logDelimiter="," logPath="/home/moreno/JMT/" logReplaceMode="0" maxEvents="-1" maxSamples="1000000" name="web-server.jsimg" polling="1.0" xsi:noNamespaceSchemaLocation="SIMmodeldefinition.xsd">
+<archive xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="web-server.jsimg" timestamp="Thu Nov 12 13:35:15 CET 2026" xsi:noNamespaceSchemaLocation="Archive.xsd">
+    <sim disableStatisticStop="false" logDecimalSeparator="." logDelimiter="," logPath="/home/moreno/JMT" logReplaceMode="0" maxEvents="-1" maxSamples="1000000" name="web-server.jsimg" polling="1.0" xsi:noNamespaceSchemaLocation="SIMmodeldefinition.xsd">
         <userClass name="Class1" priority="0" referenceSource="Source 1" softDeadline="0.0" type="open"/>
         <node name="Web Server">
             <classSoftDeadlines>
@@ -120,13 +120,13 @@
     <jmodel xsi:noNamespaceSchemaLocation="JModelGUI.xsd">
         <userClass color="#FF0000FF" name="Class1"/>
         <station name="Web Server">
-            <position angle="0.0" rotate="false" x="393.0" y="242.0"/>
+            <position angle="0.0" rotate="false" x="260.0" y="101.0"/>
         </station>
         <station name="Source 1">
-            <position angle="0.0" rotate="false" x="249.0" y="246.0"/>
+            <position angle="0.0" rotate="false" x="95.0" y="104.0"/>
         </station>
         <station name="Sink 2">
-            <position angle="0.0" rotate="false" x="587.0" y="250.0"/>
+            <position angle="0.0" rotate="false" x="475.0" y="104.0"/>
         </station>
         <parametric classPath="jmt.gui.common.definitions.parametric.ArrivalRateParametricAnalysis" enabled="true">
             <field name="Class" value="Class1"/>
