@@ -32,7 +32,7 @@ public abstract class Simulation {
         /**
          * Return the time at which this event occurs.
          */
-        public double time( ) { return evtime; }
+        public final double time( ) { return evtime; }
 
         /**
          * An Event must implement the Comparable interface, since it
