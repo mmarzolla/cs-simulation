@@ -21,19 +21,25 @@
 
 public class SimTest extends Simulation {
     public class MyEvent extends Event {
-        public MyEvent( double time ) {
+        final String name;
+        public MyEvent( double time, String name ) {
             super(time);
+            this.name = name;
         }
         public void execute( ) {
-            System.out.println("Event at time " + time());
+            System.out.println("Event " + name + " at time " + time());
         }
     }
 
     public SimTest( ) {
-        schedule( new MyEvent(5) );
-        schedule( new MyEvent(10) );
-        schedule( new MyEvent(7) );
-        schedule( new MyEvent(21) );
+        Event e1 = new MyEvent(5, "e1");
+        Event e2 = new MyEvent(10, "e2");
+        Event e3 = new MyEvent(10, "e3");
+        Event e4 = new MyEvent(21, "e4");
+        schedule( e1 );
+        schedule( e2 );
+        scheduleBefore( e3, e2 );
+        schedule( e4 );
     }
 
     public static void main( String[] args ) {
